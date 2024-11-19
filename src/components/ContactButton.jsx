@@ -1,5 +1,5 @@
 import React from 'react';
-import whatsappIcon from '../assets/walkie-talkie.png';
+import whatsappIcon from '../assets/LogoRosa.svg';
 
 function ContactButton() {
     return (

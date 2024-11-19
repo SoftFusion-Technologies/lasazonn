@@ -40,46 +40,19 @@ export const navLinks = [
   },
   {
     id: 'about',
-    title: 'Acerca'
+    title: 'Trayectoria'
   },
   {
-    id: 'work',
-    title: 'Experiencia'
+    id: 'parties',
+    title: 'Fiesta'
   },
   {
     id: 'team',
-    title: 'Equipo'
+    title: 'Birras'
   },
   {
     id: 'contact',
-    title: 'Contacto'
-  }
-];
-
-const services = [
-  {
-    title: 'Sistemas de Gestión',
-    description:
-      'Incluye planear, controlar, y mejorar, aquellos elementos de tu organización con soluciones tecnológicas innovadoras y eficientes.',
-    icon: mobile
-  },
-  {
-    title: 'Paginas Web Gestionables',
-    description:
-      'Gestiona tu contenido sin complicaciones. Con nuestros sitios web administrables, mantén tu información siempre actualizada y relevante.',
-    icon: backend
-  },
-  {
-    title: 'Landing Page / E-commerce',
-    description:
-      '¿Sabías que una Landing Page bien diseñada puede aumentar tus conversiones hasta un 300%?',
-    icon: web
-  },
-  {
-    title: 'Crecimiento Sostenible',
-    description:
-      'Fomenta un crecimiento empresarial sólido y sostenible con nuestras soluciones tecnológicas.',
-    icon: creator
+    title: 'Testimonios'
   }
 ];
 
@@ -196,7 +169,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      'En primer lugar, destaco la presencia que tienen de darte soluciones en el momento, la apertura a los pedidos o cambios y el hecho de mantenerse en constante comunicación con nosotros. Por otro lado, la creatividad, el conocimiento técnico, seriedad y velocidad ya que en el caso nuestro que estamos haciendo un trabajo de tamaño importante lo hicimos bastante rápido a mi criterio, y también me sorprendió un poco el hecho de que cualquier solicitud que les hago, siempre hay una solución, a pesar de por ahí ser cosas que no son sencillas, Uds. no tienen dificultad para hacerlas efectivas. Por todo esto es que sin dudas  voy a seguir trabajando con ustedes y eligiendolos.',
+      'La mejor fiesta de la ciudad. El ambiente en Boro Budur es único, con música excelente y una vibra que te hace sentir como en casa. Siempre nos sorprenden con eventos espectaculares, ¡nunca una noche aburrida!',
     name: 'Carlos Garcia',
     designation: 'CEO',
     company: 'HAMMER X',
@@ -204,7 +177,7 @@ const testimonials = [
   },
   {
     testimonial:
-      'Queremos destacar lo increíble que ha sido trabajar con SoftFusion. Siempre atentos, disponibles para cualquier consulta o cambio, y sobre todo, comprometidos con brindar soluciones efectivas.',
+      'Boro Budur es el lugar perfecto para desconectar y disfrutar de una noche épica. Desde la atención hasta la calidad de las bebidas, todo está pensado para que cada momento sea especial. ¡No hay otro lugar igual!',
     name: 'Constanza y Julieta',
     designation: 'Encargadas',
     company: 'SHELL SHOP',
@@ -212,7 +185,7 @@ const testimonials = [
   },
   {
     testimonial:
-      'Destacar que nos ayudaron a crear una página web que captura perfectamente la esencia de lo que significa la farmacia de mi papá para nosotros. Estuvieron siempre disponibles para cualquier cosa que necesitáramos, brindando un servicio cálido y profesional.',
+      'Cada vez que voy a Boro Budur, sé que voy a vivir una experiencia increíble. El equipo se asegura de que todo esté en su lugar, creando fiestas que son el centro de atención. Siempre con energía, siempre con estilo.',
     name: 'Ana Sofia',
     designation: 'Dermatóloga',
     company: 'Farmacia Central',
@@ -351,11 +324,4 @@ const projects2 = [
     source_code_link: 'https://ragnar-gym.netlify.app/'
   }
 ];
-export {
-  services,
-  technologies,
-  experiences,
-  testimonials,
-  projects,
-  projects2
-};
+export { technologies, experiences, testimonials, projects, projects2 };

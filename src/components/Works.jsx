@@ -1,59 +1,49 @@
-import React, { Suspense, lazy } from "react";
-import Tilt from "react-parallax-tilt";
-import { motion } from "framer-motion";
+import React, { Suspense, lazy } from 'react';
+import Tilt from 'react-parallax-tilt';
+import { motion } from 'framer-motion';
 
-import { styles } from "../styles";
-import { github } from "../assets";
-import { SectionWrapper } from "../hoc";
-import { projects, projects2 } from '../constants';
-import { fadeIn, textVariant } from "../utils/motion";
+import { styles } from '../styles';
+import { SectionWrapper } from '../hoc';
+import { fadeIn, textVariant } from '../utils/motion';
 
-const ProjectCard = ({
+import gin from '../assets/Tragos/gin.jpg';
+import bandera from '../assets/Tragos/bandera.jpg';
+import sex from '../assets/Tragos/sex.jpg';
+import daikiri from '../assets/Tragos/daikiri.jpg';
+
+const PartyCard = ({
   index,
   name,
   description,
   tags,
   image,
-  source_code_link,
+  source_code_link
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring")} >
+    <motion.div variants={fadeIn('up', 'spring')}>
       <Tilt
         options={{
           max: 25,
           scale: 1,
-          speed: 400,
+          speed: 400
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className='relative w-full h-[230px]'>
+        <div className="relative w-full h-[230px]">
           <img
             src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
+            alt={name}
+            className="w-full h-full object-cover rounded-2xl"
             loading="lazy"
           />
-
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
-          </div>
         </div>
 
-        <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+        <div className="mt-5">
+          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 
-        <div className='mt-4 flex flex-wrap gap-2'>
+        <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -68,39 +58,53 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+const Parties = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>Algunos Trabajos</p>
-        <h2 className={`${styles.sectionHeadText}`}>Proyectos.</h2>
+        <p className={`${styles.sectionSubText}`}>Fiestas en Boro Budur</p>
+        <h2 className={`${styles.sectionHeadText}`}>
+          ¡EVENTOS Y TRAGOS!
+        </h2>
       </motion.div>
 
-      <div className="w-full flex bg-stars-bg bg-no-repeat bg-cover bg-center">
+      <div
+        id="parties"
+        className="w-full flex bg-stars-bg bg-no-repeat bg-cover bg-center"
+      >
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Los siguientes proyectos muestran nuestros conocimientos y experiencia
-          a través de ejemplos reales. Cada proyecto se describe brevemente con
-          enlaces a repositorios de código y demostraciones en vivo. Refleja
-          nuestra capacidad para resolver problemas complejos, trabajar con
-          distintas tecnologías y gestionar proyectos con eficacia.
+          Unite a las mejores fiestas de la temporada en Boro Budur. Aquí
+          encontrarás eventos increíbles, música, baile y diversión sin parar.
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7 justify-center">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
-      </div>
-      <div className="hidden mt-5 md:flex flex-wrap gap-7 justify-center">
-        {projects2.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+      <div className="mt-20 flex flex-wrap gap-10 justify-center">
+        <img
+          src={gin}
+          alt="Gin Tonic"
+          className="w-48 h-96 object-contain transition-transform transform hover:scale-110"
+        />
+        <img
+          src={bandera}
+          alt="Bandera Francesa"
+          className="w-48 h-96 object-contain transition-transform transform hover:scale-110"
+        />
+        <img
+          src={sex}
+          alt="Sex on the Beach"
+          className="w-48 h-96 object-contain transition-transform transform hover:scale-110"
+        />
+        <img
+          src={daikiri}
+          alt="Daikiri"
+          className="w-48 h-96 object-contain transition-transform transform hover:scale-110"
+        />
       </div>
     </>
   );
 };
 
-export default SectionWrapper(Works, "work");
+export default SectionWrapper(Parties, 'parties');
