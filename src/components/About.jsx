@@ -10,7 +10,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 const About = () => {
   return (
     <>
-      <div className="sm:mt-20 bg-stars-bg bg-no-repeat bg-cover bg-bottom">
+      <div className="sm:mt-20 bg-no-repeat bg-cover bg-bottom">
         <motion.div variants={textVariant()}>
           {/* <p className={styles.sectionSubText}>Introducción</p> */}
           <h2 className={styles.sectionHeadText}>TRAYECTORIA</h2>

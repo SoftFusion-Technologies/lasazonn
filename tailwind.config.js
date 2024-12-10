@@ -22,7 +22,7 @@ module.exports = {
         xs: '450px'
       },
       backgroundImage: {
-        'stars-bg': "url('/src/assets/stars.svg')"
+        'bar-bg': "url('./src/assets/imgBg.webp')"
       },
       animation: {
         pulseGlow: 'pulseGlow 3s ease-in-out infinite',

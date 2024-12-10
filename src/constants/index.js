@@ -44,7 +44,7 @@ export const navLinks = [
   },
   {
     id: 'parties',
-    title: 'Fiesta'
+    title: 'Eventos'
   },
   {
     id: 'team',

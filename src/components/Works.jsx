@@ -70,7 +70,7 @@ const Parties = () => {
 
       <div
         id="parties"
-        className="w-full flex bg-stars-bg bg-no-repeat bg-cover bg-center"
+        className="w-full flex bg-no-repeat bg-cover bg-center"
       >
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}

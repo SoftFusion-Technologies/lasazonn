@@ -7,10 +7,11 @@ import LogoRosaBR from '../assets/LogoRosaBR.svg';
 import Tilt from 'react-parallax-tilt';
 import Typewriter from 'typewriter-effect';
 import { StarsCanvas2 } from '../components/canvas/index';
+import ImgPasarTragos from '../assets/tech/posibleImg.webp';
 const Hero = () => {
   return (
     <section
-      className="relative w-5/6 h-screen mx-auto bg-stars-bg bg-no-repeat bg-cover bg-fixed"
+      className="relative w-full h-screen mx-auto bg-bar-bg bg-no-repeat bg-cover bg-fixed"
       id="home"
     >
       <div
@@ -21,21 +22,18 @@ const Hero = () => {
           <h1
             className={`${styles.heroHeadText} text-yellow-500 text-center lg:text-left -mt-10`}
           >
-            BORO BUDUR
+            NÁPOLES DRUGSTORE BAR
           </h1>
-          <p className="font-black mt-2 text-white-100 text-center lg:text-left lg:ml-28 text-[18px] uppercase">
-            ¡Los reyes de la noche 👑!
+          <p className="font-black mt-2 text-black text-center lg:text-left lg:ml-16 text-[22px] uppercase">
+            ¡BUENOS AMIGOS BUENOS MOMENTOS🍻!
           </p>
         </div>
         <div className="relative w-[200px] lg:w-[560px] flex justify-center items-center group">
-          <video
-            src={Boro}
-            autoPlay
-            loop
-            muted
-            className="w-full relative z-10 transition-transform duration-500 group-hover:scale-105 animate-float rounded-full"
+          <img
+            src={ImgPasarTragos}
+            className="rounded-full"
+            alt="Personas pasando una jarra de cerveza"
           />
-          <div className="absolute inset-0 rounded-full bg-yellow-500 opacity-50 blur-xl animate-pulseGlow transition-all duration-500 group-hover:blur-3xl group-hover:scale-110"></div>
         </div>
       </div>
     </section>

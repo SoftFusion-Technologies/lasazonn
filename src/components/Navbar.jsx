@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close, user } from '../assets';
-import Logotipo from '../../public/Logotipo.svg';
+import imgNavbarBlanco from '../assets/tech/NAPOLES DRUGSTORE BAR BLANCO.png';
 import '../index.css';
 
 const Navbar = () => {
@@ -63,14 +63,9 @@ const Navbar = () => {
           }}
         >
           {/* Logo */}
-          <div className="relative w-[250px] lg:w-[500px] flex flex-col justify-center items-center">
+          <div className="relative w-[220px] lg:w-[280px] flex flex-col justify-center items-center">
             <div className="text-center">
-              <p className="text-yellow-500 font-extrabold text-[24px] lg:text-[40px] leading-none">
-                BORO BUDUR
-              </p>
-              <p className="text-white text-[16px] lg:text-[24px] leading-none">
-                SIMOCA
-              </p>
+              <img src={imgNavbarBlanco}></img>
             </div>
           </div>
         </Link>
