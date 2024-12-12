@@ -6,19 +6,12 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 
-import gin from '../assets/Tragos/gin.jpg';
-import bandera from '../assets/Tragos/bandera.jpg';
-import sex from '../assets/Tragos/sex.jpg';
-import daikiri from '../assets/Tragos/daikiri.jpg';
+import imgPizza from '../assets/Pizzas/imgPizza.jpg';
+import imgPizza1 from '../assets/Pizzas/imgPizza1.jpg';
+import imgPizza2 from '../assets/Pizzas/imgPizza2.jpg';
+import imgPizza3 from '../assets/Pizzas/imgPizza4.jpg';
 
-const PartyCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link
-}) => {
+const PartyCard = ({ name, description, tags, image }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring')}>
       <Tilt
@@ -81,26 +74,61 @@ const Parties = () => {
       </div>
 
       <div className="mt-20 flex flex-wrap gap-10 justify-center">
-        <img
-          src={gin}
-          alt="Gin Tonic"
-          className="w-48 h-96 object-contain transition-transform transform hover:scale-110"
-        />
-        <img
-          src={bandera}
-          alt="Bandera Francesa"
-          className="w-48 h-96 object-contain transition-transform transform hover:scale-110"
-        />
-        <img
-          src={sex}
-          alt="Sex on the Beach"
-          className="w-48 h-96 object-contain transition-transform transform hover:scale-110"
-        />
-        <img
-          src={daikiri}
-          alt="Daikiri"
-          className="w-48 h-96 object-contain transition-transform transform hover:scale-110"
-        />
+        <div className="relative group">
+          <img
+            src={imgPizza}
+            alt="Pizza 1"
+            className="w-60 h-80 object-cover transition-transform transform hover:scale-110"
+          />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="text-center text-white">
+              <h3 className="text-xl font-bold">Pizza 1</h3>
+              <p className="text-sm">Descripción de la pizza 1</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="relative group">
+          <img
+            src={imgPizza1}
+            alt="Pizza 2"
+            className="w-60 h-80 object-cover transition-transform transform hover:scale-110"
+          />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="text-center text-white">
+              <h3 className="text-xl font-bold">Pizza 2</h3>
+              <p className="text-sm">Descripción de la pizza 2</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="relative group">
+          <img
+            src={imgPizza2}
+            alt="Pizza 3"
+            className="w-60 h-80 object-cover transition-transform transform hover:scale-110"
+          />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="text-center text-white">
+              <h3 className="text-xl font-bold">Pizza 3</h3>
+              <p className="text-sm">Descripción de la pizza 3</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="relative group">
+          <img
+            src={imgPizza3}
+            alt="Pizza 4"
+            className="w-60 h-80 object-cover transition-transform transform hover:scale-110"
+          />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="text-center text-white">
+              <h3 className="text-xl font-bold">Pizza 4</h3>
+              <p className="text-sm">Descripción de la pizza 4</p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

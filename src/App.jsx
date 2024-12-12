@@ -7,8 +7,6 @@ import {
   Navbar,
   Team,
   Parties,
-  StarsCanvas,
-  StarsCanvas2,
   ContactButton
 } from './components';
 import Footer from './components/Footer';
