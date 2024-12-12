@@ -6,7 +6,7 @@ import {
   Hero,
   Navbar,
   Calzones,
-  Parties,
+  Pizzas,
   ContactButton
 } from './components';
 import Footer from './components/Footer';
@@ -20,7 +20,7 @@ const App = () => {
           <Hero />
         </div>
         <About />
-        <Parties />
+        <Pizzas />
         <Calzones />
         {/* <Feedbacks /> */}
         <ContactButton />

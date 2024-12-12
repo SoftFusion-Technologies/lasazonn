@@ -8,7 +8,7 @@ import {
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
-import Parties from './Works';
+import Pizzas from './Pizzas';
 import Calzones from "./Calzones";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
@@ -20,7 +20,7 @@ export {
   Hero,
   Navbar,
   About,
-  Parties,
+  Pizzas,
   Calzones,
   Feedbacks,
   Contact,

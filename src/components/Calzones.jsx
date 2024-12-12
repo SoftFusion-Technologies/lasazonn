@@ -1,8 +1,8 @@
 import { styles } from '../styles';
 
-import ipa from '../assets/Birras/ipa.jpg';
-import scottish from '../assets/Birras/scottish.jpg';
-import honey from '../assets/Birras/honey.jpg';
+import imgCalzon1 from '../assets/Calzones/imgCalzon1.jpg';
+import imgCalzon2 from '../assets/Calzones/imgCalzon2.jpg';
+import imgCalzon3 from '../assets/Calzones/imgCalzon3.jpg';
 
 export default function Team() {
   return (
@@ -18,21 +18,52 @@ export default function Team() {
           </p>
         </div>
         <div className="mt-20 flex flex-wrap gap-10 justify-center">
-          <img
-            src={ipa}
-            alt="ipa"
-            className="w-48 h-96 object-contain transition-transform transform hover:scale-110"
-          />
-          <img
-            src={honey}
-            alt="honey"
-            className="w-48 h-96 object-contain transition-transform transform hover:scale-110"
-          />
-          <img
-            src={scottish}
-            alt="scottish"
-            className="w-48 h-96 object-contain transition-transform transform hover:scale-110"
-          />
+          <div className="relative group w-[300px] h-[400px]">
+            <img
+              src={imgCalzon1}
+              alt="Calzon 1"
+              className="w-full h-full object-cover rounded-lg transition-transform transform group-hover:scale-110"
+            />
+            <div className="absolute inset-0 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 rounded-lg">
+              <h3 className="text-white text-xl font-bold">Calzone Especial</h3>
+              <p className="text-white text-sm mt-2">
+                Relleno con los mejores ingredientes para un sabor único.
+              </p>
+            </div>
+          </div>
+
+          <div className="relative group w-[300px] h-[400px]">
+            <img
+              src={imgCalzon2}
+              alt="Calzon 2"
+              className="w-full h-full object-cover rounded-lg transition-transform transform group-hover:scale-110"
+            />
+            <div className="absolute inset-0 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 rounded-lg">
+              <h3 className="text-white text-xl font-bold">
+                Calzone Mediterráneo
+              </h3>
+              <p className="text-white text-sm mt-2">
+                Lleno de sabores frescos y auténticos de la región mediterránea.
+              </p>
+            </div>
+          </div>
+
+          <div className="relative group w-[300px] h-[400px]">
+            <img
+              src={imgCalzon3}
+              alt="Calzon 3"
+              className="w-full h-full object-cover rounded-lg transition-transform transform group-hover:scale-110"
+            />
+            <div className="absolute inset-0 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 rounded-lg">
+              <h3 className="text-white text-xl font-bold">
+                Calzone Vegetariano
+              </h3>
+              <p className="text-white text-sm mt-2">
+                Perfecto para los amantes de las verduras, con ingredientes
+                frescos.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
