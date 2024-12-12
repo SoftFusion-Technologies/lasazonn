@@ -1,8 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
@@ -26,7 +22,6 @@ import {
   hammer,
   garage,
   farcentral,
-  travellive,
   conectate,
   ragnar,
   threejs,
@@ -38,7 +33,10 @@ export const navLinks = [
     id: 'home',
     title: 'Inicio'
   },
-
+  {
+    id: 'nosotros',
+    title: 'Nosotros'
+  },
   {
     id: 'parties',
     title: 'Pizzas'
@@ -50,10 +48,6 @@ export const navLinks = [
   {
     id: 'contact',
     title: 'Hamburguesas'
-  },
-  {
-    id: 'about',
-    title: 'Nosotros'
   }
 ];
 

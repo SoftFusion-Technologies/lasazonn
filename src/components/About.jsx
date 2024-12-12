@@ -5,37 +5,36 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 
-
-
 const About = () => {
   return (
     <>
       <div className="sm:mt-20 bg-no-repeat bg-cover bg-bottom">
         <motion.div variants={textVariant()}>
           {/* <p className={styles.sectionSubText}>Introducción</p> */}
-          <h2 className={styles.sectionHeadText}>TRAYECTORIA</h2>
+          <h2 className={styles.sectionHeadText}>NOSOTROS</h2>
         </motion.div>
 
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          initial={{ opacity: 0, y: 20 }} // Inicialmente está oculto y desplazado hacia abajo
+          animate={{ opacity: 1, y: 0 }} // Se mueve a su posición original y aparece
+          transition={{ duration: 2 }} // Duración aumentada a 2 segundos
         >
-          Boro Budur ha sido un referente en Simoca durante 50 años, desde 1973
-          hasta 2023. Celebramos medio siglo de fiesta, alegría y unión con la
-          comunidad. Nuestro local en la Av. Alem 449 ha sido testigo de
-          innumerables eventos, desde grandes celebraciones hasta noches llenas
-          de risas y música. Cada uno de estos momentos ha sido una oportunidad
-          para crear recuerdos inolvidables y fortalecer los lazos entre
-          nuestros amigos y vecinos. Nos enorgullece ser un espacio de encuentro
-          y diversión en Simoca, y continuamos festejando la vida con cada
-          sonrisa compartida en nuestras puertas. ¡Nos vemos en la próxima
-          fiesta en Boro Budur!{' '}
+          En La Sazón, nos especializamos en ofrecerte las mejores hamburguesas
+          y pizzas con un toque único. Sabemos lo importante que es disfrutar de
+          una comida deliciosa sin complicaciones, por eso te traemos un
+          servicio de comida a domicilio pensado especialmente para vos. Ya sea
+          que estés disfrutando de una noche de película o celebrando con
+          amigos, nuestro compromiso es brindarte una experiencia culinaria que
+          te haga sentir como en casa. ¡Y no te olvides de nuestro horario
+          especial! Estamos disponibles para ti de viernes a domingos, desde las
+          21:00 hasta las 00:00. ¡Hacé tu pedido y dejá que La Sazón transforme
+          tu finde en un verdadero festín! 🍔🍕
         </motion.p>
-
-    
       </div>
     </>
   );
 };
 
-export default SectionWrapper(About, 'about');
+export default SectionWrapper(About, 'nosotros');

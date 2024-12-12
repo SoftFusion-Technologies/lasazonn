@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <nav
       className={`w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? 'bg-primary' : 'bg-transparent'
+        scrolled ? 'bg-transparent' : 'bg-transparent'
       }`}
     >
       <div className="ml-8 uppercase w-full flex max-md:px-10 max-md:justify-between md:justify-between md:px-10 lg:px-0 lg:justify-around items-center ">
@@ -79,7 +79,8 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? 'text-white' : 'text-secondary'
-              } hover:text-orange-500 text-[18px] font-medium cursor-pointer transition-colors duration-300`}
+              } hover:text-orange-500 text-[18px] font-medium cursor-pointer transition-colors duration-300
+        rounded-lg border-2 border-transparent hover:border-orange-500 p-2`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
