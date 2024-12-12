@@ -62,22 +62,21 @@ const Parties = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}>Fiestas en Boro Budur</p>
+        <p className={`${styles.sectionSubText}`}>Pizzas en La Sazón</p>
         <h2 className={`${styles.sectionHeadText}`}>
-          ¡EVENTOS Y TRAGOS!
+          ¡DELICIOSAS PIZZAS PARA COMPARTIR!
         </h2>
       </motion.div>
 
-      <div
-        id="parties"
-        className="w-full flex bg-no-repeat bg-cover bg-center"
-      >
+      <div id="parties" className="w-full flex bg-no-repeat bg-cover bg-center">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Unite a las mejores fiestas de la temporada en Boro Budur. Aquí
-          encontrarás eventos increíbles, música, baile y diversión sin parar.
+          Disfruta de las mejores pizzas artesanales en La Sazón. Sabores
+          únicos, ingredientes frescos y una masa crujiente que te hará volver
+          una y otra vez. <br></br>¡No te quedes sin probar nuestras pizzas y
+          acompáñalas con nuestras bebidas y salsas especiales!
         </motion.p>
       </div>
 
