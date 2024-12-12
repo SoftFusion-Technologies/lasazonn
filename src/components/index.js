@@ -12,7 +12,8 @@ import Pizzas from './Pizzas';
 import Hamburguesas from './Hamburguesas';
 import Calzones from './Calzones';
 import Feedbacks from './Feedbacks';
-import Contact from './Contact';
+import Contact from './ContactForm';
+import MapComponent from './Mapa';
 import CanvasLoader from './Loader';
 import ContactButton from './ContactButton';
 
@@ -25,6 +26,7 @@ export {
   Hamburguesas,
   Feedbacks,
   Contact,
+  MapComponent,
   CanvasLoader,
   EarthCanvas,
   BallCanvas,

@@ -8,7 +8,8 @@ import {
   Calzones,
   Pizzas,
   Hamburguesas,
-  ContactButton
+  ContactButton,
+  MapComponent
 } from './components';
 import Footer from './components/Footer';
 
@@ -27,7 +28,8 @@ const App = () => {
         {/* <Feedbacks /> */}
         <ContactButton />
         <div className="relative z-0">
-          {/* <Contact /> */}
+           <Contact />
+          <MapComponent></MapComponent>
           <Footer />
         </div>
       </div>

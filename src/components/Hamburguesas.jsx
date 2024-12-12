@@ -14,7 +14,7 @@ const hamburguesas = () => {
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText}`}>Hamburguesas en La Sazón</p>
         <h2 className={`${styles.sectionHeadText}`}>
-          ¡DELICIOSAS HAMBURGUESAS PARA COMPARTIR!
+          ¡NO TE QUEDES SIN PROBAR TU HAMBURGUESA!
         </h2>
       </motion.div>
 
