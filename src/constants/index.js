@@ -38,21 +38,22 @@ export const navLinks = [
     id: 'home',
     title: 'Inicio'
   },
-  {
-    id: 'about',
-    title: 'Trayectoria'
-  },
+
   {
     id: 'parties',
-    title: 'Eventos'
+    title: 'Pizzas'
   },
   {
     id: 'team',
-    title: 'Birras'
+    title: 'Calzones'
   },
   {
     id: 'contact',
-    title: 'Testimonios'
+    title: 'Hamburguesas'
+  },
+  {
+    id: 'about',
+    title: 'Nosotros'
   }
 ];
 

@@ -22,12 +22,15 @@ module.exports = {
         xs: '450px'
       },
       backgroundImage: {
-        'bar-bg': "url('./src/assets/imgBg.webp')"
+        'bar-bg': "url('./src/assets/Tragos/imgHeroSazon.webp')"
       },
       animation: {
         pulseGlow: 'pulseGlow 3s ease-in-out infinite',
         float: 'float 6s ease-in-out infinite',
         fadeInOut: 'fadeInOut 3s ease-in-out infinite'
+      },
+      fontFamily: {
+        sazon: ['"Dancing Script"', 'cursive'] // Fuente personalizada
       },
       keyframes: {
         pulseGlow: {

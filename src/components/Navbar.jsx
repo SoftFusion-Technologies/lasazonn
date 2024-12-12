@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close, user } from '../assets';
-import imgNavbarBlanco from '../assets/tech/NAPOLES DRUGSTORE BAR BLANCO.png';
+
 import '../index.css';
 
 const Navbar = () => {
@@ -65,7 +65,9 @@ const Navbar = () => {
           {/* Logo */}
           <div className="relative w-[220px] lg:w-[280px] flex flex-col justify-center items-center">
             <div className="text-center">
-              <img src={imgNavbarBlanco}></img>
+              <span className="font-sazon text-4xl lg:text-5xl text-white">
+                La Sazón
+              </span>
             </div>
           </div>
         </Link>
@@ -77,7 +79,7 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? 'text-white' : 'text-secondary'
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-orange-500 text-[18px] font-medium cursor-pointer transition-colors duration-300`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
