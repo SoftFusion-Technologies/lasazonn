@@ -5,7 +5,7 @@ import {
   Feedbacks,
   Hero,
   Navbar,
-  Team,
+  Calzones,
   Parties,
   ContactButton
 } from './components';
@@ -21,7 +21,7 @@ const App = () => {
         </div>
         <About />
         <Parties />
-        <Team />
+        <Calzones />
         {/* <Feedbacks /> */}
         <ContactButton />
         <div className="relative z-0">

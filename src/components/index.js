@@ -9,7 +9,7 @@ import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
 import Parties from './Works';
-import Team from "./TeamSection";
+import Calzones from "./Calzones";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
@@ -21,7 +21,7 @@ export {
   Navbar,
   About,
   Parties,
-  Team,
+  Calzones,
   Feedbacks,
   Contact,
   CanvasLoader,
