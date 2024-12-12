@@ -42,7 +42,7 @@ export const navLinks = [
     title: 'Calzones'
   },
   {
-    id: 'contact',
+    id: 'hamburguesas',
     title: 'Hamburguesas'
   }
 ];

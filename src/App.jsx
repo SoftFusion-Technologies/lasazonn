@@ -7,6 +7,7 @@ import {
   Navbar,
   Calzones,
   Pizzas,
+  Hamburguesas,
   ContactButton
 } from './components';
 import Footer from './components/Footer';
@@ -22,6 +23,7 @@ const App = () => {
         <About />
         <Pizzas />
         <Calzones />
+        <Hamburguesas />
         {/* <Feedbacks /> */}
         <ContactButton />
         <div className="relative z-0">
