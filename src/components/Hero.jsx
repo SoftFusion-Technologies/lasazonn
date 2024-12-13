@@ -27,19 +27,6 @@ const Hero = () => {
             La Sazón
           </motion.h1>
 
-          {/* Smasher */}
-          <motion.div
-            className="absolute top-0 w-[100px] h-[100px] bg-gray-800 rounded-full flex items-center justify-center"
-            initial={{ y: -200, opacity: 0 }} // Comienza fuera de la pantalla
-            animate={{ y: [0, 20], opacity: 1 }} // Baja y aplasta
-            transition={{
-              duration: 1,
-              ease: 'easeOut'
-            }}
-          >
-            <span className="text-white font-bold text-[18px]">Smasher</span>
-          </motion.div>
-
           {/* Humo */}
           <motion.div
             className="absolute top-[50%] w-[150px] h-[80px] bg-gray-300 rounded-lg opacity-50"
