@@ -4,7 +4,7 @@ import './span.css';
 const Hero = () => {
   return (
     <section
-      className="relative w-full h-screen sm:h-[100vh] mx-auto bg-bar-bg bg-no-repeat bg-cover bg-fixed bg-center"
+      className="relative w-full h-screen sm:h-[100vh] mx-auto bg-bar-bg bg-no-repeat bg-cover bg-center sm:bg-fixed"
       id="home"
     >
       <div
