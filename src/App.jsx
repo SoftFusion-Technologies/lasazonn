@@ -1,6 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import {
   About,
+  Carta,
   Contact,
   Feedbacks,
   Hero,
@@ -27,8 +28,9 @@ const App = () => {
         <Hamburguesas />
         {/* <Feedbacks /> */}
         <ContactButton />
+        <Carta />
         <div className="relative z-0">
-           <Contact />
+          <Contact />
           <MapComponent></MapComponent>
           <Footer />
         </div>

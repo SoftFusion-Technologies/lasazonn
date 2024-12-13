@@ -102,7 +102,7 @@ export default function ContactForm() {
         </form>
 
         {status && (
-          <div className="mt-4 text-center text-green-500 font-semibold">
+          <div className="mt-4 text-center text-black font-semibold">
             <p>{status}</p>
           </div>
         )}
