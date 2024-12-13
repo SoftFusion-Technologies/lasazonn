@@ -3,7 +3,6 @@ import {
   About,
   Carta,
   Contact,
-  Feedbacks,
   Hero,
   Navbar,
   Calzones,

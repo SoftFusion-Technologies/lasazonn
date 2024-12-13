@@ -76,7 +76,7 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`text-white ${
+              className={`text-whit ${
                 active === nav.title ? 'text-white' : 'text-secondary'
               } hover:text-white text-[18px] font-medium cursor-pointer transition-colors duration-300
         rounded-lg border-2 border-transparent hover:border-orange-500 p-2`}
