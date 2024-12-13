@@ -28,7 +28,7 @@ const App = () => {
         {/* <Feedbacks /> */}
         <ContactButton />
         <div className="relative z-0">
-          <Contact />
+           <Contact />
           <MapComponent></MapComponent>
           <Footer />
         </div>
