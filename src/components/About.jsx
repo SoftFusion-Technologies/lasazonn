@@ -28,9 +28,9 @@ const About = () => {
           que estés disfrutando de una noche de película o celebrando con
           amigos, nuestro compromiso es brindarte una experiencia culinaria que
           te haga sentir como en casa. ¡Y no te olvides de nuestro horario
-          especial! Estamos disponibles para ti de viernes a domingos, desde las
+          especial! Estamos disponibles para vos de viernes a domingos, desde las
           21:00 hasta las 00:00. ¡Hacé tu pedido y dejá que La Sazón transforme
-          tu finde en un verdadero festín! 🍔🍕
+          tu finde! 🍔🍕
         </motion.p>
       </div>
     </>
