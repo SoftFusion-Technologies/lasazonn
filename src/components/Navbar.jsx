@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close, user } from '../assets';
 
@@ -77,9 +76,9 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${
+              className={`text-white ${
                 active === nav.title ? 'text-white' : 'text-secondary'
-              } hover:text-orange-500 text-[18px] font-medium cursor-pointer transition-colors duration-300
+              } hover:text-white text-[18px] font-medium cursor-pointer transition-colors duration-300
         rounded-lg border-2 border-transparent hover:border-orange-500 p-2`}
               onClick={() => setActive(nav.title)}
             >
