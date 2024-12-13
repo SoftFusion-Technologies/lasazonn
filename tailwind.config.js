@@ -22,7 +22,7 @@ module.exports = {
         xs: '450px'
       },
       backgroundImage: {
-        'bar-bg': "url('./src/assets/Tragos/imgHeroSazon.webp')"
+        'bar-bg': "url('/assets/Tragos/imgHeroSazon.webp')"
       },
       animation: {
         pulseGlow: 'pulseGlow 3s ease-in-out infinite',
